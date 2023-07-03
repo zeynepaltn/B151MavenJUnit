@@ -20,6 +20,7 @@ public class C03_JSExecutor_Click extends TestBase {
     Bu webelementleri handle edebilmek icin JavaScriptExecutor arayuzunu kullanmamiz gerekir.
     Bir webelement JavaScript kodlari ile yazilmamis olsa da javaScriptExecutor ile o webelementi handle edebiliriz
     Normal bildigimiz methodlardan daha yavas calisacagi icin bildigimiz methodlar isimizi goruyorsa onlari kullaniriz
+    <script> tagi ile olusturdugumuz webelementleri de js executor ile handle edebiliriz
      */
 
     @Test
