@@ -15,6 +15,12 @@ public class C03_JSExecutor_Click extends TestBase {
     Ancak mumkunse webdriver'in sundugu standard yontemlerle sayfayla etkilesime gecmek her zaman
      daha iyidir, cunku JavaScript kullanimi sayfanin daha yavas yuklenmesine neden olabilir.
  */
+     /*
+        Bir web sayfasinda bazi webelementler olusturulurken JAVASCRIPT kodlariyla olusturulmus olabilir.
+    Bu webelementleri handle edebilmek icin JavaScriptExecutor arayuzunu kullanmamiz gerekir.
+    Bir webelement JavaScript kodlari ile yazilmamis olsa da javaScriptExecutor ile o webelementi handle edebiliriz
+    Normal bildigimiz methodlardan daha yavas calisacagi icin bildigimiz methodlar isimizi goruyorsa onlari kullaniriz
+     */
 
     @Test
     public void jsExecuterClick() {
