@@ -45,8 +45,8 @@ public abstract class TestBase {
 
     @After
     public void tearDown() throws Exception {
-        extentReports.flush();
-        driver.quit();
+        //extentReports.flush();
+        //driver.quit();
     }
     public void bekle(int saniye){
         try {
@@ -158,6 +158,17 @@ public abstract class TestBase {
         extentHtmlReporter.config().setReportName(reportName);
 
     }
+    public void click(WebElement element){
+
+        try {
+            element.click();
+        } catch (Exception e) {
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();",element);
+        }
+    }
+
 
 
 
